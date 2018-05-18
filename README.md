@@ -38,6 +38,35 @@ Input:
 {" productId ":13860428," prodName ":"The Big Lebowski (Blu-ray) (Widescreen)"," currentPrice ":{"value": 256," currencyCode ":"USD"}}
 Output: -
 Success message is returned if it is updated successfully.
+Testing:
+The testcases are present in the folder 'src\test\java\myRetail\controller'.
+The test cases can be executed by running the command './gradlew test'
+API Requests and Responses
+PUT Request
+Following PUT request will store information of productID:13860428 in MySQL database.
+Request
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
+   "currencyCode": "USD", \ 
+   "currentPrice": "21.25", \ 
+   "prodName": "string", \ 
+   "productId": "13860428" \ 
+ }' 'http://localhost:8080/products/13860428'
+Response
+Response Code
+200 Product details updated
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: text/plain' -d '{ \ 
+   "currencyCode": "USD", \ 
+   "currentPrice": "21.25", \ 
+   "prodName": "string", \ 
+   "productId": "13860428" \ 
+ }' 'http://localhost:8080/products/1386042'
+
+Response
+Response Body
+ProductId's doesn't Match
+Response Code
+400
+
 
 
 
