@@ -1,7 +1,7 @@
 # RedskyMyRetail
 MyRetail Application
 
-Refer README.doc 
+Refer README.docx 
 
 
 
