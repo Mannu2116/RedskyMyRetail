@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * Date : 05/11/2018
  * */
 
-@ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "Product price cannot be updated, request body json should have matching id with path variable ...ProductId in request header and body doesn't match.")
+@ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "ProductId in request header and body doesn't match.")
 public class ResourceMisMatchException extends RuntimeException{
 }
