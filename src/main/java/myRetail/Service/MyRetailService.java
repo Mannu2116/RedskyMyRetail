@@ -30,7 +30,7 @@ public class MyRetailService {
      * @param productId
      * @return
      */
-    public Product getRedSkyData(String productId) {
+    public Product getRedSkyData(String productId) throws ResourceNotFoundException {
 
         final String URL = "https://redsky.target.com/v2/pdp/tcin/" + productId + "?excludes=taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics";
 
